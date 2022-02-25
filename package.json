@@ -1,0 +1,15 @@
+{
+  "name": "smhns-browser-game",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "author": "Sam Heijens <sam.heijens@doubleverify.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch"
+  }
+}
