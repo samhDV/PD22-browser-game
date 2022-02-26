@@ -106,9 +106,6 @@ function getNextTetromino(): Tetromino {
 let tetromino = getNextTetromino();
 
 document.addEventListener("keydown", function (e) {
-  console.log(e.which);
-  let newVals = { ...tetromino };
-
   // left and right arrow keys (move)
   if (e.which === 37) {
     tetromino = goLeft(tetromino);
@@ -177,9 +174,8 @@ function placeTetromino(tetromino: Tetromino) {
       }
     }
   }
-  const tetronimo = getNextTetromino();
   verifyPlayfield(playfield);
-  return tetronimo;
+  return getNextTetromino();
 }
 
 function verifyPlayfield(playfield: Playfield): void {
@@ -188,7 +184,8 @@ function verifyPlayfield(playfield: Playfield): void {
       // drop every row above this one
       for (let r = row; r >= 0; r--) {
         for (let c = 0; c < playfield[r].length; c++) {
-          playfield[r][c] = playfield[r - 1][c] ?? 0;
+          const val = r > 0 ? playfield[r - 1][c] : 0;
+          playfield[r][c] = val;
         }
       }
     } else {
