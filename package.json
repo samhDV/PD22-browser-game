@@ -8,8 +8,8 @@
   "dependencies": {
     "typescript": "^4.5.5"
   },
-  "scripts": {
-    "build": "tsc --build",
-    "watch": "tsc --build --watch"
-  }
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/samhDV/PD22-browser-game.git"
 }

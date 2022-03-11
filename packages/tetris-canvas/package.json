@@ -1,0 +1,12 @@
+{
+  "name": "tetris-canvas",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch"
+  }
+}
