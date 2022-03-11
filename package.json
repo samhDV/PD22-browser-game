@@ -1,7 +1,6 @@
 {
   "name": "smhns-browser-game",
   "version": "0.0.1",
-  "main": "index.ts",
   "author": "Sam Heijens <sam.heijens@doubleverify.com>",
   "license": "MIT",
   "private": true,

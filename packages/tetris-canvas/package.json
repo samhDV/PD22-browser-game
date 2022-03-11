@@ -2,11 +2,16 @@
   "name": "tetris-canvas",
   "version": "1.0.0",
   "main": "index.ts",
-  "dependencies": {
-    "typescript": "^4.5.5"
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "live-server": "^1.2.1",
+    "ts-loader": "^9.2.8",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "build": "tsc --build",
-    "watch": "tsc --build --watch"
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=8081"
   }
 }
